@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Roozbeh Hajizadeh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio and resume of Roozbeh Hajizadeh." />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Top navigation bar -->
+<nav class="top-nav">
+    <div class="nav-inner">
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#goals">Research</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+        </div>
+    </div>
+</nav>
+
+<div class="page">
+    <!-- Hero (فقط برای معرفی اولیه + اسکرول بالا) -->
+    <header class="hero" id="top">
+        <div class="hero-center">
+            <div class="hero-photo-wrapper">
+                <img src="first.jpg" alt="Roozbeh Hajizadeh" class="hero-photo" />
+            </div>
+            <h1 class="hero-name-text">Roozbeh Hajizadeh</h1>
+            <div class="hero-role">Explore my work in Machine Learning, AI Research</div>
+        </div>
+    </header>
+
+    <!-- Main content: single column cards -->
+    <div class="content-column">
+
+        <!-- About (کارت جدا) -->
+        <section class="card" id="about">
+            <div class="section-header">
+                <div class="section-title">About</div>
+            </div>
+            <p class="goal-text">
+                I am a Computer Science &amp; Engineering graduate interested in machine learning,
+                deep learning, and cybersecurity. Recently, I have been working on multi-stage
+                intrusion detection systems using Autoencoders, GAN-based augmentation, and
+                classical ML models on real network and IoT datasets.
+            </p>
+            <ul class="list-simple">
+                <li>Strong interest in anomaly detection, trustworthy AI, and data-driven security.</li>
+                <li>Actively preparing graduate applications for MSc/MASc programs (Fall 2026).</li>
+            </ul>
+        </section>
+
+        <!-- Education -->
+        <section class="card" id="education">
+            <div class="section-header">
+                <div class="section-title">Education</div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div class="entry-title">B.Sc. in Computer Science &amp; Engineering</div>
+                    <div class="entry-meta">2021 – 2025</div>
+                </div>
+                <div class="entry-sub">
+                    Shiraz University of Technology · GPA: 17.03 / 20 (≈ 3.6 / 4.0)
+                </div>
+                <ul>
+                    <li>Final project: Multi-Stage Hierarchical Intrusion Detection System using Autoencoders, GAN-based augmentation, and ML models.</li>
+                    <li>Key courses: Data Structures &amp; Algorithms, Advanced Programming, Computer Networks, AI, Principles of Computational Intelligence.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Selected Projects -->
+        <section class="card" id="projects">
+            <div class="section-header">
+                <div class="section-title">Selected Projects</div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div class="entry-title">Multi-Stage Hierarchical Intrusion Detection System</div>
+                    <div class="entry-meta">Python · TensorFlow · Sklearn</div>
+                </div>
+                <div class="entry-sub">
+                    CIC-IDS-2017 &amp; CIC-IoT-2023 datasets
+                </div>
+                <ul>
+                    <li>Autoencoder-based anomaly detector followed by ML classifiers (RF, KNN, MLP, etc.) for attack-type classification.</li>
+                    <li>Handled heavy class imbalance with SMOTE and GAN-based data augmentation for rare attacks.</li>
+                    <li>Evaluated with accuracy, F1-score, precision, and recall.</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div class="entry-title">Mentoro – Student Mentorship Platform</div>
+                    <div class="entry-meta">Laravel · MySQL</div>
+                </div>
+                <div class="entry-sub">
+                    Full-stack web application
+                </div>
+                <ul>
+                    <li>Platform for students to connect with mentors, book sessions, and track progress.</li>
+                    <li>Implemented authentication, role-based access, and simple dashboards.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="card" id="skills">
+            <div class="section-header">
+                <div class="section-title">Skills</div>
+            </div>
+
+            <div class="skill-group">
+                <div class="skill-label">Programming</div>
+                <div class="chip-row">
+                    <span class="chip chip-strong">Python</span>
+                    <span class="chip">C#</span>
+                    <span class="chip">C/C++</span>
+                    <span class="chip">PHP</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <div class="skill-label">ML &amp; DL</div>
+                <div class="chip-row">
+                    <span class="chip chip-strong">TensorFlow / Keras</span>
+                    <span class="chip">Scikit-learn</span>
+                    <span class="chip">Autoencoders</span>
+                    <span class="chip">GANs</span>
+                    <span class="chip">Anomaly Detection</span>
+                    <span class="chip">SMOTE</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <div class="skill-label">Data &amp; Tools</div>
+                <div class="chip-row">
+                    <span class="chip">Pandas</span>
+                    <span class="chip">NumPy</span>
+                    <span class="chip">Matplotlib</span>
+                    <span class="chip">Git &amp; GitHub</span>
+                    <span class="chip">Jupyter / VS Code</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <div class="skill-label">Web &amp; Databases</div>
+                <div class="chip-row">
+                    <span class="chip">Laravel</span>
+                    <span class="chip">MySQL</span>
+                    <span class="chip">REST APIs</span>
+                    <span class="chip">HTML / CSS</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="card" id="experience">
+            <div class="section-header">
+                <div class="section-title">Experience</div>
+            </div>
+            <p class="goal-text">
+                Teaching Assistant at Shiraz University of Technology for:
+            </p>
+            <ul class="list-simple">
+                <li>Principles of Computational Intelligence, Artificial Intelligence</li>
+                <li>Data Structures &amp; Algorithms, Advanced Programming</li>
+                <li>Computer Networks, Microprocessor &amp; Assembly Language</li>
+                <li>IT Strategic Management &amp; Planning</li>
+            </ul>
+        </section>
+
+        <!-- Goals / Research -->
+        <section class="card" id="goals">
+            <div class="section-header">
+                <div class="section-title">Research &amp; Goals</div>
+            </div>
+            <p class="goal-text">
+                I plan to pursue graduate studies in Computer Science / Data Science, working on
+                trustworthy AI, anomaly detection, and generative models for cybersecurity and IoT.
+                I enjoy combining solid theory with real-world datasets and practical systems.
+            </p>
+        </section>
+
+    </div>
+
+    <footer>
+        © <span id="year"></span> · Designed &amp; built by Roozbeh Hajizadeh
+    </footer>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
