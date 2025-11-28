@@ -383,3 +383,279 @@ footer {
         white-space: normal;
     }
 }
+@media (max-width: 640px) {
+    /* ... چیزهای قبلی‌ات اینجاست ... */
+
+    .edu-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .edu-dates {
+        white-space: normal;
+    }
+}
+
+
+.about-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 10px 0 0;
+    font-size: 0.88rem;
+    color: var(--text-main);
+}
+
+.about-list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.about-icon-img {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    opacity: 0.9;
+    /* اگر آیکن‌هات مشکی هستن و بک‌گراند تیره داری، می‌تونی این خط رو تست کنی: */
+    /* filter: invert(1); */
+}
+
+.about-label {
+    font-weight: 600;
+    color: var(--text-main);
+    min-width: 110px;
+}
+
+.about-value {
+    color: var(--text-soft);
+}
+
+.about-list a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.about-list a:hover {
+    text-decoration: underline;
+}
+/* === Education section with background image === */
+
+.edu-section {
+    position: relative;
+    border-radius: 26px;
+    overflow: hidden;
+    box-shadow: 0 22px 60px rgba(15, 23, 42, 0.95);
+}
+
+/* عکس دانشگاه – اسم فایل رو عوض کن به اسم واقعی خودت */
+.edu-bg {
+    position: absolute;
+    inset: 0;
+    /* اگر دوست داری بیشتر بالای در معلوم باشه، از center top استفاده کردیم */
+    background: url("images/sutech-gate.jpg") center top/cover no-repeat;
+    /* روشن‌ترش می‌کنیم که خود عکس واضح‌تر بشه */
+    filter: brightness(0.6);
+    /* دیگه نیاز به scale نداریم */
+}
+
+
+/* گرادیان تیره روی عکس */
+.edu-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(15, 23, 42, 0.20) 0%,
+        rgba(15, 23, 42, 0.55) 40%,
+        rgba(15, 23, 42, 0.90) 100%
+    );
+}
+
+
+
+.edu-content {
+    position: relative;
+    padding: 40px 26px 32px;
+}
+
+.edu-title-row {
+    margin-bottom: 10px;
+}
+
+.edu-tag {
+    font-family: "Courier New", monospace;
+    font-size: 1.4rem;
+    color: #60a5fa;
+}
+
+.edu-main-card {
+    /* عملاً فقط یک ظرف ساده برای متن، بدون هیچ کارت/کادر خاص */
+    margin-top: 24px;
+    padding: 0 4px 12px;
+
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+
+    font-family: "Courier New", monospace;
+}
+
+
+.edu-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.edu-university {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #e5e7eb;
+}
+
+.edu-degree {
+    margin-top: 6px;
+    font-size: 0.95rem;
+    color: #e5e7eb;
+}
+
+.edu-dates {
+    font-size: 0.9rem;
+    color: var(--text-soft);
+    white-space: nowrap;
+}
+
+.edu-highlight-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    color: #e5e7eb;
+}
+
+.edu-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.edu-icon {
+    flex-shrink: 0;
+    width: 1.6rem;           /* پهنای ثابت برای تراز شدن متن‌ها */
+    text-align: center;
+}
+
+.edu-text {
+    flex: 1;
+    text-align: justify;
+    text-justify: inter-word;
+    text-align-last: left;
+}
+.edu-university,
+.edu-degree,
+.edu-dates,
+.edu-text {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.85);
+}
+
+/* === Projects timeline === */
+
+/* === Projects timeline === */
+
+.projects-timeline {
+    position: relative;
+    margin-top: 10px;
+    padding-left: 44px;  /* جا برای خط و دایره‌ها */
+}
+
+/* خط عمودی سراسری کنار پروژه‌ها */
+.projects-timeline::before {
+    content: "";
+    position: absolute;
+    top: 24px;           /* شروع تقریبی وسط دایره‌ی اول */
+    bottom: 24px;        /* پایان تقریبی وسط دایره‌ی آخر */
+    left: 22px;          /* مرکز دایره‌ها (نصف عرض 44px) */
+    width: 3px;
+    transform: translateX(-50%);  /* خط دقیقاً از وسط دایره رد بشه */
+    background: #22c55e;          /* سبز پررنگ و بدون گرادیان */
+    border-radius: 999px;
+}
+
+.project-item {
+    position: relative;
+    display: flex;
+    gap: 14px;
+    padding: 18px 0;
+}
+
+.project-item:last-child {
+    padding-bottom: 0;
+}
+
+.project-marker {
+    position: relative;
+    width: 44px;              /* هماهنگ با padding-left و left بالا */
+    display: flex;
+    justify-content: center;
+}
+
+/* دایره‌ی سبز کنار هر پروژه */
+.project-dot {
+    margin-top: 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 999px;
+    border: 3px solid var(--accent);
+    background: #020617;
+    box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.3);
+}
+
+
+/* محتوای پروژه */
+.project-body {
+    flex: 1;
+}
+
+.project-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.project-title {
+    margin: 0;
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: #e5e7eb;
+}
+
+.project-tech {
+    font-size: 0.86rem;
+    color: var(--text-soft);
+    white-space: nowrap;
+}
+
+.project-subtitle {
+    font-size: 0.88rem;
+    color: #9ca3af;
+    margin-bottom: 4px;
+}
+
+.project-points {
+    margin: 4px 0 0 18px;
+    font-size: 0.88rem;
+    color: var(--text-main);
+}
+
+.project-points li {
+    margin-bottom: 3px;
+}
+/* خط عمودی برای هر marker به‌صورت تکه‌ای */
+
